@@ -1,0 +1,97 @@
+@charset "utf-8";
+@font-face {
+	font-family: musicos-variant-comics;
+	src:url(sources/musicos_variant_comics.ttf); 
+	}
+/* CSS Document */
+body {
+	background-color: black;
+}
+
+/* Navbar */
+.nav {
+	margin: -8px 0px 0px -8px;
+	width: 1349px;
+	height: 150px;
+	background-image:url(sources/nav.jpg);
+	}
+#emblem {
+	margin-top: -20px;
+	padding-right: 100px;
+	width: 180px; 
+	height: 180px;
+	float: left;
+	}
+	
+.navbuttons {
+	font-family: musicos-variant-comics;
+	font-size: 50px;
+	color: white;
+	text-decoration: none;
+	margin: 0px 20px;
+	float: right;
+	}
+
+#special {
+	color:#FF9900;
+	}	
+
+.navbuttons:hover {
+	text-shadow: 0px 0px 10px white;
+	}
+	
+#special:hover {
+	text-shadow: 0px 0px 10px #FF9900;
+
+	}
+.image {
+	margin: 0px 0px 0px -8px;
+	width: 1349px;
+	}
+	
+.artist {
+	background-image
+	}
+
+
+/* Footer */
+.footer {
+	background-image:url(sources/artistdiv.jpg);
+	background-repeat: none;
+	width: 1349px;
+	height: 300px;
+	margin-left: -8px;
+	}	
+	
+#contact {
+	font-family: musicos-variant-comics;
+	color: white;
+	font-size: 60px;
+	margin:-4px 0px 0px 0px;
+	}
+
+#contactinfo {
+	margin-left: 20px;
+	font-family: musicos-variant-comics;
+	color: white;
+	font-size:40px;
+	margin: -2px 0px 0px -2px;
+	list-style: none;
+	float: left;
+}
+
+#govemblem {
+	 width: 200px; 
+	 height: 197px;
+	 float: right;
+	 margin-top: 50px;
+	 margin-right: 50px;
+	}
+
+#townsville {
+	width: 200px; 
+	height: 197px;
+	float: right;
+	margin-top: 60px;
+	margin-right: 50px;
+	}
