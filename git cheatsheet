@@ -1,0 +1,13 @@
+To get Initially
+git init
+git clone https://github.com/Tukeyan/StringOverflow.git
+
+to get updates
+git pull website
+
+to give updates
+
+git add <file>    -add files
+git rm <file>     -remove files
+git commit -m "message"
+git push origin website
