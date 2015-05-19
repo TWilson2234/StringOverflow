@@ -1,3 +1,7 @@
+<?php 
+session_start();  
+error_reporting(E_ALL);
+ ?>
 <!doctype html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,13 +13,19 @@
 <div class="nav">
 <table>
 	<th><a href="home.html"><img src="sources/music.png" id="emblem" /></th>
-	<th><a class="navbuttons" href="home.html">Home</a></th>
-	<th nowrap><a class="navbuttons" href="about.html">About Us</a></th>
-	<th><a class="navbuttons" href="artists.html">Artists</a></th>
-	<th><a class="navbuttons" href="events.html">Events</a></th>
-	<th><a class="navbuttons" href="notices.html">Notices</a></th>
-	<th 	nowrap><a class="navbuttons" id="special" href="signup.html">Sign up</a></th>
-	<th><a class="navbuttons" id="special" href="login.html">Login</a></th>
+	<th><a class="navbuttons" href="index.php">Home</a></th>
+	<th><a class="navbuttons" href="about.php">About Us</a></th>
+	<th><a class="navbuttons" href="artists.php">Artists</a></th>
+	<th><a class="navbuttons" href="events.php">Events</a></th>
+	<th><a class="navbuttons" href="notices.php">Notices</a></th>
+	<?php if (!isset($_SESSION['username']))
+		{ 
+			echo '<th><a class="navbuttons" id="special" href="signup.php"> Sign up </a></th><th><a class="navbuttons" 				id="special" href="login.php"> Login </a></th>';
+		}
+		else
+		{
+			echo '<th><a class="navbuttons" id="special" href="logout.php"> Log Out </a></th>';	
+		}?>
 </table>
 </div>
 
