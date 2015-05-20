@@ -1,5 +1,7 @@
 <?php
-include("dbconnect.php")?>
+include("dbconnect.php");
+session_start();
+error_reporting(E_ALL);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,7 +17,9 @@ foreach ($dbh->query($sql) as $row)
 <h1><?php echo "$row[ARTIST_NAME]" ?></h1>
 <?php echo "$row[ARTIST_TEXT_LONG]" ?><br />
 <img src= <?php echo "$row[ARTIST_IMAGEPATH]"?> width="128" height="128" />
-
+<?php 
+if(isset($_SESSION['username']))
+{ ?>
 <form id="deleteForm" name="deleteForm" method="post" action="artistmodify.php">
 <?php
 	echo "<input type='text' name='name' value='$row[ARTIST_NAME]' /> <input type='text' name='sum' value='$row[ARTIST_TEXT_SHORT]' /> <input type='text' name='desc' value='$row[ARTIST_TEXT_LONG]' /> <input type='text' name='img' value='$row[ARTIST_IMAGEPATH]' />\n";
@@ -25,6 +29,7 @@ foreach ($dbh->query($sql) as $row)
 <input type="submit" name="submit" value="Delete Entry" class="deleteButton">
 </form>
 <?php
+}
 }
 // close the database connection
 $dbh = null;
