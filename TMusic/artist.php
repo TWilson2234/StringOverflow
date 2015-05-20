@@ -13,23 +13,20 @@ error_reporting(E_ALL);?>
 $sql = "SELECT * FROM ARTIST WHERE ARTIST_ID = {$_GET['id']}";
 foreach ($dbh->query($sql) as $row)
 {
-?>
-<h1><?php echo "$row[ARTIST_NAME]" ?></h1>
-<?php echo "$row[ARTIST_TEXT_LONG]" ?><br />
-<img src= <?php echo "$row[ARTIST_IMAGEPATH]"?> width="128" height="128" />
-<?php 
-if(isset($_SESSION['username']))
-{ ?>
-<form id="deleteForm" name="deleteForm" method="post" action="artistmodify.php">
-<?php
+	echo "<h1>$row[ARTIST_NAME]</h1>";
+	echo "$row[ARTIST_TEXT_LONG]<br />";
+	echo "<img src= $row[ARTIST_IMAGEPATH] width='128' height='128' />";
+	
+	
+	if(isset($_SESSION['username']))
+	{
+	echo "<form id='deleteForm' name='deleteForm' method='post' action='artistmodify.php'>";
 	echo "<input type='text' name='name' value='$row[ARTIST_NAME]' /> <input type='text' name='sum' value='$row[ARTIST_TEXT_SHORT]' /> <input type='text' name='desc' value='$row[ARTIST_TEXT_LONG]' /> <input type='text' name='img' value='$row[ARTIST_IMAGEPATH]' />\n";
 	echo "<input type='hidden' name='id' value='$row[ARTIST_ID]' />";
-?>
-<input type="submit" name="submit" value="Update Entry" />
-<input type="submit" name="submit" value="Delete Entry" class="deleteButton">
-</form>
-<?php
-}
+	echo "<input type='submit' name='submit' value='Update Entry' />";
+	echo "<input type='submit' name='submit' value='Delete Entry' class='deleteButton'>";
+	echo "</form>";
+	}
 }
 // close the database connection
 $dbh = null;
