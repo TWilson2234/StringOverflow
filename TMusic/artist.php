@@ -18,14 +18,24 @@ foreach ($dbh->query($sql) as $row)
 	echo "<img src= $row[ARTIST_IMAGEPATH] width='128' height='128' />";
 	
 	
-	if(isset($_SESSION['username']))
+	
+}
+if(isset($_SESSION['username']))
+{
+	$username = $_SESSION['username'];
+	$sql2 = "SELECT * FROM ACCOUNT WHERE ACCOUNT_USERNAME = '$username'";
+	foreach ($dbh->query($sql2) as $row)
 	{
-	echo "<form id='deleteForm' name='deleteForm' method='post' action='artistmodify.php'>";
+		//checks if not free account (admin is 2, paid user is 1, free user is 0)
+		if(!$row['ACCOUNT_TYPE'] == 0)
+		{
+			echo "<form id='deleteForm' name='deleteForm' method='post' action='artistmodify.php'>";
 	echo "<input type='text' name='name' value='$row[ARTIST_NAME]' /> <input type='text' name='sum' value='$row[ARTIST_TEXT_SHORT]' /> <input type='text' name='desc' value='$row[ARTIST_TEXT_LONG]' /> <input type='text' name='img' value='$row[ARTIST_IMAGEPATH]' />\n";
 	echo "<input type='hidden' name='id' value='$row[ARTIST_ID]' />";
 	echo "<input type='submit' name='submit' value='Update Entry' />";
 	echo "<input type='submit' name='submit' value='Delete Entry' class='deleteButton'>";
 	echo "</form>";
+		}
 	}
 }
 // close the database connection
