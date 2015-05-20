@@ -1,5 +1,5 @@
 <?php 
-include("dbconnect.php");
+require("secure/dbconnect.php");
 session_start(); 
 error_reporting(E_ALL);
  ?>
@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+<link type="text/css" rel="stylesheet" href="secure/stylesheet.css" />
 <title>Artists | Townsville Community Music Centre</title>
 </head>
 
@@ -45,6 +45,7 @@ foreach ($dbh->query($sql) as $row)
 }
 echo "</table>";
 echo "</fieldset>\n";
+$dbh = null;
 ?>
 <br />
 

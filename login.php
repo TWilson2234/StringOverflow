@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 
 if (!isset($_SESSION['username'])) {
 ?>
-<form id="login" name="login" method="post" action="authenticate.php">
+<form id="login" name="login" method="post" action="secure/authenticate.php">
   <label for="username">Username:</label>
   <input type="text" name="username" id="username">
   <br>

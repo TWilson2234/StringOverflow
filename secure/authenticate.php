@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+$dbh = new PDO("sqlite:database.sqlite");
 session_start();
 error_reporting(E_ALL);
 if (!isset($_SESSION['username']))
@@ -14,7 +14,7 @@ if (!isset($_SESSION['username']))
 			if(!isset ($row))
 			{
 				//if no results, kick
-				header("Location: login.php");
+				header("Location: ../login.php");
 				$dbh = null;
 				exit();
 			}
@@ -23,11 +23,11 @@ if (!isset($_SESSION['username']))
 				$_SESSION['username'] = $username;
 				session_regenerate_id();
 				$dbh = null;
-				header("Location: index.php");
+				header("Location: ../index.php");
 				exit();
     		}
 		}
-		header("Location: login.php");
+		header("Location: ../login.php");
 		$dbh = null;
 		exit();
 	}

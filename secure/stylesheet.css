@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
 	font-family: musicos-variant-comics;
-	src:url(sources/musicos_variant_comics.ttf); 
+	src:url(../sources/musicos_variant_comics.ttf); 
 	}
 	
 	
@@ -110,7 +110,7 @@ body h1{
 
 /* Footer */
 footer {
-	background-image:url(sources/artistdiv.jpg);
+	background-image:url(../sources/artistdiv.jpg);
 	background-repeat: none;
 	/*background-color: #DD0003;*/
 	margin-left: 10%;

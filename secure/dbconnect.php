@@ -1,6 +1,6 @@
 <?php
 	try{
-		$dbh = new PDO("sqlite:database.sqlite");
+		$dbh = new PDO("sqlite:secure/database.sqlite");
 	}
 
 	catch(PDOException $e)

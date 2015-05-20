@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 <!doctype html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+<link type="text/css" rel="stylesheet" href="secure/stylesheet.css" />
 <title>Artists | Townsville Community Music Centre</title>
 </head>
 
