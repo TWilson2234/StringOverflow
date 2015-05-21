@@ -11,7 +11,7 @@ $sql = "SELECT * FROM EVENT";
 foreach ($dbh->query($sql) as $row)
 {
 	
-//tags below are output of query, anything put between these 2 tags is going to get repeated for every artist
+//tags below are output of query, anything put between these 2 tags is going to get repeated for every event
 ?>
 
 
