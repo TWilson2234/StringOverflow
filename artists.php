@@ -1,8 +1,9 @@
-<?php 
+<?php
+//connect to database and start session usage 
 require("secure/dbconnect.php");
 session_start(); 
 error_reporting(E_ALL);
- ?>
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,14 +21,17 @@ error_reporting(E_ALL);
 <th><a class="navbuttons" href="artists.php"> Artists </a></th>
 <th><a class="navbuttons" href="events.php"> Events </a></th>
 <th><a class="navbuttons" href="notices.php"> Notices </a></th>
-<?php if (!isset($_SESSION['username']))
-		{ 
-			echo '<th><a class="navbuttons" id="special" href="signup.php"> Sign up </a></th><th><a class="navbuttons" 				id="special" href="login.php"> Login </a></th>';
-		}
-		else
-		{
-			echo '<th><a class="navbuttons" id="special" href="logout.php"> Log Out </a></th>';	
-		}?>
+<?php 
+//if no username is set, show sign up and login
+if (!isset($_SESSION['username']))
+{ 
+	echo '<th><a class="navbuttons" id="special" href="signup.php"> Sign up </a></th><th><a class="navbuttons" 				id="special" href="login.php"> Login </a></th>';
+}
+//otherwise show logout
+else
+{
+	echo '<th><a class="navbuttons" id="special" href="logout.php"> Log Out </a></th>';	
+}?>
 </table>
 </div>
 
@@ -35,18 +39,25 @@ error_reporting(E_ALL);
 
 <div class="artist"></div>
 <?php
+//sends query to database to get all of artist table
 $sql = "SELECT * FROM ARTIST";
 foreach ($dbh->query($sql) as $row)
 {
+	
+//tags below are output of query, anything put between these 2 tags is going to get repeated for every artist
 ?>
-<tr><td><a href="artist.php?id=<?php echo "$row[ARTIST_ID]" ?>"><?php echo "$row[ARTIST_NAME]</a>" ?></td><td><?php echo "$row[ARTIST_TEXT_SHORT]" ?></td><td><img src= <?php echo "$row[ARTIST_IMAGEPATH]"?> width="128" height="128" /></td></tr></tr>
+
+
+
+<tr><td><?php echo '<a href="artist.php?id=$row[ARTIST_ID]">'?><?php echo "$row[ARTIST_NAME]</a>" ?></td><td><?php echo "$row[ARTIST_TEXT_SHORT]" ?></td><td><img src= <?php echo "$row[ARTIST_IMAGEPATH]"?> width="128" height="128" /></td></tr></tr><br />
 
 <?php
+//put this whole wheverever you want the output of artist table from database to end
 }
-echo "</table>";
-echo "</fieldset>\n";
 $dbh = null;
 ?>
+</table>
+</fieldset>
 <br />
 
 <div class="footer">
