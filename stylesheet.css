@@ -1,0 +1,171 @@
+@charset "utf-8";
+@font-face {
+	font-family: musicos-variant-comics;
+	src:url(sources/musicos_variant_comics.ttf); 
+	}
+	
+	
+/* CSS Document */
+
+/*Body*/
+body {
+	background-color: #000000;
+}
+
+body h1{
+	/*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: musicos-variant-comics;
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: -20px;
+}
+
+.containter{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: left;
+	background-color: #E5E3E3;
+	-webkit-box-shadow: 0px 0px #E83538;
+	box-shadow: 0px 0px #E83538;
+	padding-left: 10px;
+}
+
+body h1, h2, h3, h4{
+	font-family: musicos-variant-comics;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+
+body ul{
+   list-style-type: none;
+}
+/*Content*/
+
+/*Side Features*/
+.sfeat {
+	background-color: #FFFFFF;
+	float: right;
+	-webkit-box-shadow: 3px 3px 3px 3px #000000;
+	box-shadow: 3px 3px 3px 3px #000000;
+	margin-right: 15px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	clear: both;
+	margin-top: 20px;
+	margin-left: 15px;
+	text-align: center;
+	max-width: 267px;
+}
+
+
+.sfeat img {
+	width: 50px;
+	height: 50px;
+}
+
+/* Navbar */
+.nav {
+	width: 75%;
+	height: 221%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: left;	
+	/*margin-left: 10%;
+	margin-right: 10%; 
+	background-image: url(sources/nav.jpg);*/
+	}
+#emblem {
+	margin-top: -20px;
+	padding-right: 0px;
+	width: 180px;
+	height: 180px;
+	float: left;
+	}
+	
+.navbuttons {
+	font-family: musicos-variant-comics;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+#special {
+	color: #FFF10F;
+	}	
+
+.navbuttons:hover {
+	text-shadow: 0px 0px 10px white;
+	}
+	
+#special:hover {
+	text-shadow: 0px 0px 10px #FFF10F;
+
+	}
+.image {
+
+
+	}
+	
+/* .artist {
+	background-image
+	} */
+
+
+/* Footer */
+footer {
+	background-image:url(sources/artistdiv.jpg);
+	background-repeat: none;
+	/*background-color: #DD0003;*/
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-left: 10%;
+	font-family: musicos-variant-comics;
+	color: #000000;
+	}	
+	
+footer ul {
+	color: white;
+	font-size: large;
+	list-style: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 60%;
+	overflow: hidden;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+footer img {
+	width: 200px;
+	height: 197px;
+	float: right;
+	position: relative;
+	}
+	
+footer h1 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+
+
+
+	
+}
+
+
+/*#townsville {
+	width: 200px; 
+	height: 197px;
+	float: right;
+	margin-top: 60px;
+	margin-right: 50px;
+	}*/
