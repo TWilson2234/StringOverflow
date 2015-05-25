@@ -8,7 +8,7 @@ if (!isset($_SESSION['username']))
 	{
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$sql = "SELECT ACCOUNT_PASSWORD FROM ACCOUNT WHERE ACCOUNT_USERNAME = '$username'";
+		$sql = "SELECT ACCOUNT_PASSWORD FROM ACCOUNT WHERE ACCOUNT_EMAIL = '$username'";
 		foreach($dbh->query($sql) as $row)
 		{
 			if(!isset ($row))
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username']))
 	}
 	else
 	{
-		header("Location: login.php");
+		header("Location: ../login.php");
 		exit();
 	}
 }

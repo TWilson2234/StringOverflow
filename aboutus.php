@@ -1,28 +1,3 @@
-<!doctype html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link type="text/css" rel="stylesheet" href="stylesheet.css" />
-<title>About Us | Townsville Community Music Centre</title>
-</head>
-
-<body>
-<div class="nav">
-<table>
-	<th><a href="home.html"><img src="sources/music.png" id="emblem" /></th>
-	<th><a class="navbuttons" href="home.html">Home</a></th>
-	<th nowrap><a class="navbuttons" href="about.html">About Us</a></th>
-	<th><a class="navbuttons" href="artists.html">Artists</a></th>
-	<th><a class="navbuttons" href="events.html">Events</a></th>
-	<th><a class="navbuttons" href="notices.html">Notices</a></th>
-	<th nowrap><a class="navbuttons" id="special" href="signup.html">Sign up</a></th>
-	<th><a class="navbuttons" id="special" href="login.html">Login</a></th>
-</table>
-</div>
-
-<img src="sources/Banners/1AboutUsBanner.png" width="1343" height="345" class="image" />
-
-<!-- <img src="sources/background.jpg" width="1370" height="720" class="image" /> -->
-<div class="containter"> 
 	<h1>About US</h1>
     
     <div class="sfeat">
@@ -116,5 +91,3 @@ Also discovered in the old collection were some pieces relevant to North Queensl
 </ul>
 </br>
 </footer>
-</body>
-</html>

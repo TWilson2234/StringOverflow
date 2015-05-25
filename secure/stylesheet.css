@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
 	font-family: musicos-variant-comics;
-	src:url(../sources/musicos_variant_comics.ttf); 
+	src:url(file:///F|/cp2010/website/sources/musicos_variant_comics.ttf); 
 	}
 	
 	
@@ -59,15 +59,40 @@ body h1{
 }
 /* Navbar */
 .nav {
-	width: 75%;
-	height: 221%;
-	margin-left: 10%;
-	margin-right: 10%;
-	text-align: left;	
-	/*margin-left: 10%;
-	margin-right: 10%; 
-	background-image: url(sources/nav.jpg);*/
+	background-image: url(sources/nav.jpg);
 	}
+	
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 130px;
+  height: 130px;
+  float: left;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #000000;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
 #emblem {
 	margin-top: -20px;
 	padding-right: 0px;
@@ -81,9 +106,6 @@ body h1{
 	font-size: 40px;
 	color: white;
 	text-decoration: none;
-	float: right;
-	padding-left: 20px;
-	padding-right: 20px;
 	}
 
 #special {
@@ -110,7 +132,7 @@ body h1{
 
 /* Footer */
 footer {
-	background-image:url(../sources/artistdiv.jpg);
+	background-image:url(file:///F|/cp2010/website/sources/artistdiv.jpg);
 	background-repeat: none;
 	/*background-color: #DD0003;*/
 	margin-left: 10%;
@@ -149,3 +171,69 @@ footer h1 {
 	margin-top: 60px;
 	margin-right: 50px;
 	}*/
+#loginGreyout {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+div#popupContact {
+position:relative;
+left:50%;
+top:17%;
+margin-left:-202px;
+}
+form {
+max-width:300px;
+min-width:250px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+#name {
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#password {
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#cd853f;
+color:#fff;
+font-size:18px;
+cursor:pointer
+}
+

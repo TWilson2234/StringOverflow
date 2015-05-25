@@ -1,30 +1,14 @@
-<?php 
-session_start();  
-error_reporting(E_ALL);
- ?>
-<!doctype html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
+<script src="secure/loginPopupFunctions.js"></script>
+<div id="popupContact">
 <title>Login Page</title>
-<link href="styles.css" rel="stylesheet">
 </head>
 <body>
+ <!-- Contact Us Form -->
+<form action="secure/authenticate.php" id="login" method="post" name="login">
+<img id="close" src='link to close image' onclick ="div_hide()">
 <h1>Login Page</h1>
-<?php 
-
-if (!isset($_SESSION['username'])) {
-?>
-<form id="login" name="login" method="post" action="secure/authenticate.php">
-  <label for="username">Username:</label>
-  <input type="text" name="username" id="username">
-  <br>
-    <label for="password">Password:</label>
-  <input type="password" name="password" id="password">
-  <br>
-    <input type="submit" name="submit" value="Login">
-</form>
-    <?php } ?>
-</nav>
-</body>
-</html>
+<hr>
+<label for="username">Username:</label><input type="text" name="username" id="username"><br>
+<label for="password">Password:</label><input type="password" name="password" id="password"><br>
+<a href="javascript:%20check_empty()" id="submit" type="submit" name="submit" value="Login">Login</a>
+</form></div>
