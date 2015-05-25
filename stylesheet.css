@@ -3,23 +3,153 @@
 	font-family: musicos-variant-comics;
 	src:url(sources/musicos_variant_comics.ttf); 
 	}
-	
-	
 /* CSS Document */
-
-/*Body*/
+/*Content*/
 body {
-	background-color: #000000;
+	background: black;
+	color: white;
 }
 
-body h1{
-	/*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/* Navbar */
+.nav {
+	margin: -8px 0px 0px -8px;
+	width: 1349px;
+	height: 150px;
+	background-image:url(sources/nav.jpg);
+	}
+#emblem {
+	margin-top: -20px;
+	padding-right: 100px;
+	width: 180px; 
+	height: 180px;
+	float: left;
+	}
+	
+.navbuttons {
+	font-family: musicos-variant-comics;
+	font-size: 50px;
+	color: white;
+	text-decoration: none;
+	margin: 0px 20px;
+	float: right;
+	font-weight: normal;
+	}
+
+#special {
+	color:#FF9900;
+	}	
+
+.navbuttons:hover {
+	text-shadow: 0px 0px 10px white;
+	}
+	
+#special:hover {
+	text-shadow: 0px 0px 10px #FF9900;
+
+	}
+.image {
+	margin: 0px 0px 0px -8px;
+	width: 1349px;
+	}
+	
+.artist {
+	margin-top: -50px;
+	margin-left: -8px;
+	width: 1349px;
+	vertical-align: middle;
+	color: #999999;
+	background-image: url(sources/artistgradiant.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	}
+
+.artistPrev {
+	width: 1349; 
+	border: 1;
+	margin-left: -2px;
+	
+	}
+
+.artistCells {
+	width: 445px;
+	
+	}	
+	
+.artistPic {
+	width: 322.5px; 
+	height:375px;
+	padding:50px;
+	margin-left: 20px;
+	
+	}
+
+.artistPic:hover {
+	box-shadow: 0px 0px 10px #666666;
+	background-color: #666666;
+	cursor: pointer;
+	}
+
+.artisttitle {
+	font-family: musicos-variant-comics;
+	color: white;
+	font-size: 150px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	margin: 30px auto 100px auto;
+	padding-bottom: 20px;
+	
+	}
+	
+/*signup*/
+
+.musemblem {
+	width:250px; 
+	height: 250px;
+	}
+
+.signuptitle {
+	color: white;
+	font-size: 80px;
 	font-family: musicos-variant-comics;
 	text-align: center;
-	font-weight: bolder;
-	margin-bottom: -20px;
-}
+	margin-top: 50px;
+	padding-bottom: -50px;
+	}
+	
+.tablepillow {
+	width: 1349px;
+	border: 2px white; 
+	cellspacing: 0px; 
+	cellpadding: 10px;
+	padding: 50px 0px 50px 50px;
+	}
 
+.forminfo {
+	color: white;
+	font-family: arial;
+	font-size: 15px;
+	}	
+
+.forminfobig {
+	font-size: 25px;
+	color: white;
+	font-family: arial;
+	}
+	
+.textfields { 
+	margin: 0px 50px 0px 50px;
+	color: white;
+	}
+
+#textfield {
+	margin-top: 20px;
+	}
+.labels {
+	color: white;
+	}
+	
 .containter{
 	margin-left: 10%;
 	margin-right: 10%;
@@ -28,6 +158,9 @@ body h1{
 	-webkit-box-shadow: 0px 0px #E83538;
 	box-shadow: 0px 0px #E83538;
 	padding-left: 10px;
+	background-image:url(sources/artistgradiant.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body h1, h2, h3, h4{
@@ -37,17 +170,17 @@ body h1, h2, h3, h4{
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+	color: white;
 }
 
 
 body ul{
    list-style-type: none;
 }
-/*Content*/
 
 /*Side Features*/
 .sfeat {
-	background-color: #FFFFFF;
+	background-color: #E5E3E3;
 	float: right;
 	-webkit-box-shadow: 3px 3px 3px 3px #000000;
 	box-shadow: 3px 3px 3px 3px #000000;
@@ -61,111 +194,55 @@ body ul{
 	margin-left: 15px;
 	text-align: center;
 	max-width: 267px;
+	color: black;
 }
 
+.sfeat h3 {
+	color: black;
+	}
 
 .sfeat img {
 	width: 50px;
 	height: 50px;
-}
-
-/* Navbar */
-.nav {
-	width: 75%;
-	height: 221%;
-	margin-left: 10%;
-	margin-right: 10%;
-	text-align: left;	
-	/*margin-left: 10%;
-	margin-right: 10%; 
-	background-image: url(sources/nav.jpg);*/
-	}
-#emblem {
-	margin-top: -20px;
-	padding-right: 0px;
-	width: 180px;
-	height: 180px;
-	float: left;
-	}
-	
-.navbuttons {
-	font-family: musicos-variant-comics;
-	font-size: 40px;
-	color: white;
-	text-decoration: none;
-	float: right;
-	padding-left: 20px;
-	padding-right: 20px;
-	}
-
-#special {
-	color: #FFF10F;
-	}	
-
-.navbuttons:hover {
-	text-shadow: 0px 0px 10px white;
-	}
-	
-#special:hover {
-	text-shadow: 0px 0px 10px #FFF10F;
-
-	}
-.image {
-
-
-	}
-	
-/* .artist {
-	background-image
-	} */
-
-
+}	
 /* Footer */
-footer {
+.footer {
 	background-image:url(sources/artistdiv.jpg);
 	background-repeat: none;
-	/*background-color: #DD0003;*/
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-left: 10%;
-	font-family: musicos-variant-comics;
-	color: #000000;
+	width: 1349px;
+	height: 300px;
+	margin-left: -8px;
 	}	
 	
-footer ul {
+#contact {
+	font-family: musicos-variant-comics;
 	color: white;
-	font-size: large;
-	list-style: none;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-right: 60%;
-	overflow: hidden;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-}
-
-footer img {
-	width: 200px;
-	height: 197px;
-	float: right;
-	position: relative;
+	font-size: 60px;
+	margin:-4px 0px 0px 0px;
 	}
-	
-footer h1 {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 
-
-
-	
+#contactinfo {
+	margin-left: 20px;
+	font-family: musicos-variant-comics;
+	color: white;
+	font-size:40px;
+	margin: -2px 0px 0px -2px;
+	list-style: none;
+	float: left;
 }
 
+#govemblem {
+	 width: 200px; 
+	 height: 197px;
+	 float: right;
+	 margin-top: 50px;
+	 margin-right: 50px;
+	}
 
-/*#townsville {
+#townsville {
 	width: 200px; 
 	height: 197px;
 	float: right;
 	margin-top: 60px;
 	margin-right: 50px;
-	}*/
+	}
