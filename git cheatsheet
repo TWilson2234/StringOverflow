@@ -1,0 +1,18 @@
+To get Initially
+git clone https://github.com/Tukeyan/StringOverflow.git -b website
+cd StringOverflow
+git init
+git checkout
+
+-you should get a message saying "Your branch is up-to-date with 'origin/website'."
+-you'll need to init git before doing any of the rest each time
+
+to get updates
+git pull origin
+
+to give updates
+
+git add <file>    -add files
+git rm <file>     -remove files
+git commit -m "message"
+git push origin website
