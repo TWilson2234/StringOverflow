@@ -5,18 +5,6 @@ session_start();
 error_reporting(E_ALL);
 ?>
 <div class="notices">
-<form id="noticeFilter" name="noticeFilter" method="post" action="">
-    	<select name ="Day">
-        <option value="1">1</option>
-        </select>
-        <select name ="Month">
-        <option value="1">January</option>
-        </select>
-        <select name ="Year">
-        <option value="1">2015</option>
-        </select>
-        <input type="submit" name="submit" value="Filter">
-</form>
 <?php
 //sends query to database to get all of event table
 $sql = "SELECT * FROM NOTE";

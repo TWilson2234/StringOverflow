@@ -11,6 +11,7 @@
         <label for="phoneAfter">Afterhours:</label><input type="text" name="phoneAfter"><br>
         <label for="phoneMobile">Mobile:</label><input type="text" name="phoneMobile"><br>
         <label for="email">Email:</label><input type="text" name="email"><br>
+        <label for="password">Password:</label><input type="password" name="password"><br>
         <input type="submit" name="submit" value="Submit">
     </form>
     <p class="forminfo">Phone: (07) 4724 2086</p>

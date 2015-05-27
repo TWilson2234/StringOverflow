@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+$dbh = new PDO("sqlite:database.sqlite");
 $debugOn = true;
 
 if ($_REQUEST['submit'] == "Insert Entry")
