@@ -14,7 +14,15 @@ function display()
 			echo '<h1>'.$row[ARTIST_NAME].'</h1>';
 			echo $row[ARTIST_TEXT_LONG].'<br />';
 			echo '<img src= '.$row[ARTIST_IMAGEPATH].' width="128" height="128" />';
-			if(isset($_SESSION['username']))
+			
+			echo '</div>';
+			echo '<ul>';
+			echo '<li><a onclick="artist_show('.$id.')">'.$row[ARTIST_NAME].'</a></li>';
+			echo '<li>'. $row[ARTIST_TEXT_SHORT] .'</li>';
+    		echo '<li><img src='.$row[ARTIST_IMAGEPATH].' width="128" height="128" /></li>';
+			echo '</ul>';
+		}
+		if(isset($_SESSION['username']))
 			{
 				$username = $_SESSION['username'];
 				$sql2 = "SELECT * FROM ACCOUNT WHERE ACCOUNT_EMAIL = '$username'";
@@ -32,13 +40,6 @@ function display()
 					}
 				}
 			}
-			echo '</div>';
-			echo '<ul>';
-			echo '<li><a onclick="artist_show('.$id.')">'.$row[ARTIST_NAME].'</a></li>';
-			echo '<li>'. $row[ARTIST_TEXT_SHORT] .'</li>';
-    		echo '<li><img src='.$row[ARTIST_IMAGEPATH].' width="128" height="128" /></li>';
-			echo '</ul>';
-		}
 // close the database connection
 $dbh = null;
 

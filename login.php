@@ -8,5 +8,5 @@
 <hr id="popupLogin">
 <label for="email">Email:</label><input type="text" name="email" id="email"><br>
 <label for="password">Password:</label><input type="password" name="password" id="password"><br>
-<a href="javascript:%20check_empty()" id="submit" type="submit" name="submit" value="Login">Login</a>
+<a href="javascript:%20check_login_empty()" id="submit" type="submit" name="submit" value="Login">Login</a>
 </form></div></div>
