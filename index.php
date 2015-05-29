@@ -32,6 +32,9 @@ switch($_GET['page_id'])
 	$title = 'Sign Up';
 	break;
 	
+	case(6):
+	$title = 'Feeder';
+	
 	default:
 	$title = 'Home Page';
 }
@@ -48,6 +51,7 @@ switch($_GET['page_id'])
 <li><a class="navbuttons" href="?page_id=2"> Artists </a></li>
 <li><a class="navbuttons" href="?page_id=3"> Events </a></li>
 <li><a class="navbuttons" href="?page_id=4"> Notices </a></li>
+<li><a class="navbuttons" href="?page_id=6"> Feeder </a></li>
 <?php if (!isset($_SESSION['username']))
 		{ 
 			echo '<li><a class="navbuttons" id="special" href="?page_id=5"> Sign up </a></li>
@@ -91,6 +95,10 @@ switch($_GET['page_id'])
 	case(5):
 	echo '<img src="sources/Banners/1MembersBanner.png" class="banner" /><div class="containter">';
 	include("signup.php");
+	break;
+	
+	case(6):
+	include("feeder.php");
 	break;
 	
 	default:
