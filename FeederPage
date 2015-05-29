@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="Secure/stylesheet.css" />
+<title>Artists | Townsville Community Music Centre</title>
+</head>
+
+<body>
+<div class="nav">
+<table>
+	<th><a href="home.html"><img src="sources/music.png" id="emblem" /></th>
+	<th><a class="navbuttons" href="home.html">Home</a></th>
+	<th nowrap><a class="navbuttons" href="about.html">About Us</a></th>
+	<th><a class="navbuttons" href="artists.html">Artists</a></th>
+	<th><a class="navbuttons" href="events.html">Events</a></th>
+	<th><a class="navbuttons" href="notices.html">Notices</a></th>
+	<th 	nowrap><a class="navbuttons" id="special" href="signup.html">Sign up</a></th>
+	<th><a class="navbuttons" id="special" href="login.html">Login</a></th>
+</table>
+</div>
+
+
+<!--<img src="sources/background.jpg" width="1370" height="720" class="image" /> -->
+<div class="containter"> 
+	<h1>Genres of Music</h1>
+    
+
+
+
+<p>Townsville Community Music Centre offers a range of genres, below are just a few: </p>
+
+<p> <strong>Classical: </strong> Classical music started from around 1000AD and features predominently instrumental songs. Some of the most famous classical musicians and writers include Richard Wagner, Edvard Grieg, George Gershwin and Ludwig van Beethoven.</p>
+
+<p> <strong>Jazz: </strong> Jazz originated in african americans around the time of the late 19th century to the early 20th century. It originates from the genres blues, folk, and classical music. Jazz music tends to most notabley include instruments like the saxophone, trumpet, bass, guitar, and piano. It originated from America. Some famous jazz musicians include Billie Pierce, Lovie Austin and Jeanette Kimbell. </p>
+
+<p> <strong>Rock: </strong> Rock music first became promintent in the 50's and 60's in the UK and US. It features stylistic origins of rock and roll, jazz, country, soul and blues. Common instruments used in rock music include bass guitar, drums, electric guitar and keyboards. Some of the more notable rock performers include The Beatles and the Rolling Stones.</p>
+
+
+
+
+<br><br><br><br><br><br><br>
+</div>
+
+
+<footer>
+<ul>
+<h1>Contact us:</h1>
+<li>Ph: 07 4724 2086</li>
+<li>Mob: 0402 255 182</li>
+<li>Address: Townsville Civic Theatre, 41 Boundry Street</li>
+<li>Townsville, QLD 4810</li>
+<li>Postal Address: PO Box 1006, Townsville, QLD 4810</li>
+</ul>
+<img src="sources/govemblem.png" /> 
+<img src="sources/city of townsville.png"/>
+
+</footer>
+</div>
+</body>
+</html>
